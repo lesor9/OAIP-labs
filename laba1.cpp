@@ -1,5 +1,5 @@
 #include <math.h>
-#include <iostream.h>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -7,14 +7,15 @@ int main()
 
 setlocale(LC_ALL,"Russian");
 
-double x,y,f,a,s;
+double x,y,f,s;
 int k;
 
 cout << "Введите X "; 
    cin >> x;
 cout << "Введите Y "; 
    cin >> y;
-cout << "Выберите F: 1 - sh(x)" << endl << "2 - x^2" << endl << "3 – exp(x)"; 
+
+cout << "Выберите F: 1 - sh(x)" << endl << "2 - x^2" << endl << "3 – exp(x)" << endl; 
    cin >> k;
 
 switch(k)
@@ -35,10 +36,9 @@ default:
 
 if (x>y) { 
 s = y * sqrt(f) + 3 * sin(x);
-return 1;
 } else
 if (x<y) s = x * sqrt(fabs(f));
-else s = pow(fabs(f), double(1/3)) + (pow(x, 3) / y);
+else s = pow(fabs(f), 1./3) + (pow(x, 3) / y);
 
 cout << "Результат = " << s << endl;
 
