@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-	
 	double a, b, h, x, y, s, z;
 	int n, i;
 	long double m;
@@ -35,6 +34,7 @@ int main()
 		y = (1 + 2 * pow(x, 2)) * exp(pow(x, 2));
 
 		cout << setw(15) << x << setw(15) << y << setw(15) << s << endl;
+
 		x += h;
 
 	} while (x <= b);
