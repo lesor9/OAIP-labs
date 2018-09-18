@@ -5,21 +5,21 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
-
 	int  i, k, j;
 	int a[100];
 	
-	cout << "Введите количество элементов: ";
+	cout << "Vvdedite kolichestvo elementov: ";
 	cin >> k;
 
 
-	cout << "Введите каждый элемент массива: " << endl;
+	cout << "Vvedite kazhdui element massiva: " << endl;
 	for (i = 0; i < k; i++)
 	{
 		cout << "a[" << i + 1 << "]= ";
 		cin >> a[i];
 	}
+
+	cout << endl << endl;
 
 	for (i = 0; i < k; i++) 
 	{
@@ -27,19 +27,14 @@ int main()
 		{
 			if (a[i] == a[j])
 			{
+				k -= 1;
 				for (int b = j; b < k; b++)
 				{
 					a[b] = a[b + 1];
 				}
 			}
 		}
-	}
-	
-	cout << endl << endl;
-
-	for (i = 0; i < k; i++)
-	{
-		if (a[i] != -858993460) cout << "a[" << i + 1 << "]= " << a[i] << endl;
+		cout << "a[" << i + 1 << "]= " << a[i] << endl;
 	}
 
 	system("pause");
