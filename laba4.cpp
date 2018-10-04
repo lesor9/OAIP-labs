@@ -27,11 +27,12 @@ int main()
 		{
 			if (a[i] == a[j])
 			{
-				k -= 1;
+				k--;
 				for (int b = j; b < k; b++)
 				{
 					a[b] = a[b + 1];
 				}
+				j--;
 			}
 		}
 		cout << "a[" << i + 1 << "]= " << a[i] << endl;

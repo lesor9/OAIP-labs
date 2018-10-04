@@ -9,7 +9,7 @@ int main()
 	int n, i;
 	long double m;
 
-	n = 140;
+	n = 2;
 	x = a = 0.1;
 	b = 1;
 	m = 1;
