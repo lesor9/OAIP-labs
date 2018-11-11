@@ -30,7 +30,7 @@ int main()
 			m = 1;
 			s += z;
 		}
-		
+
 		y = (1 + 2 * pow(x, 2)) * exp(pow(x, 2));
 
 		cout << setw(15) << x << setw(15) << y << setw(15) << s << endl;
